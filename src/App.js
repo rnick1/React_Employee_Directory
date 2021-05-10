@@ -1,9 +1,17 @@
 import './App.css';
 import React, { Component } from "react";
 import axios from "axios";
-import { Navbar } from 'react-bootstrap';
+import { Container, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import EmployeeTable from './components/EmployeeTable';
+import TableHead from './components/TableHead';
+
+/* Future Improvements: 
+1. Replace class component design with functional component design
+2. Use useState and useEffect hooks
+3. Send some of this code to components
+4. Place all API code in a file inside a utils folder
+*/
 
 class App extends Component {
   constructor(props) {
@@ -12,6 +20,7 @@ class App extends Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
+// Handling API call
   componentDidMount() {
     axios
       .get("https://randomuser.me/api/?results=20&nat=US")
@@ -24,6 +33,7 @@ class App extends Component {
       });
   }
 
+// Sorting/filtering
   handleChange(event) {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
@@ -87,9 +97,10 @@ class App extends Component {
             </Navbar.Text>
           </Navbar.Collapse>
         </Navbar>
-        <EmployeeTable
-        {...employeeNames}
-        />
+        <Container>
+          <TableHead/>
+          {employeeNames}
+        </Container>
       </div>
     );
   }

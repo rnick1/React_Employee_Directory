@@ -1,21 +1,12 @@
 import React, { Component } from "react";
-import { Container, Table } from 'react-bootstrap';
+import { Table } from 'react-bootstrap';
+import '../App.css';
 
 class EmployeeTable extends Component {
     render() {
       return (
         <div>
-          <Container>
             <Table striped bordered hover variant="light">
-              <thead>
-                <tr>
-                  <th>Last Name</th>
-                  <th>First Name</th>
-                  <th>Username</th>
-                  <th>Password</th>
-                  <th>Email</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
                   <td>{this.props.last}</td>
@@ -26,7 +17,6 @@ class EmployeeTable extends Component {
                 </tr>
               </tbody>
             </Table>
-          </Container>
         </div>
       );
     }
