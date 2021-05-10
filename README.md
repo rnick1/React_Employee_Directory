@@ -11,6 +11,7 @@
 - [Usage](#usage)
 - [License](#license)
 - [Contributors](#contributors)
+- [Link](#link)
 
 ### **Project Description:**
 
@@ -31,5 +32,9 @@ None
 ### **Contributors:**
 
 rnick1
+
+### **Link:**
+
+<a href="https://rnick1.github.io/React_Employee_Directory/">Employee_Directory<a>
 
 ### If you have any questions, please contact Nick Rider at: rnick0260@gmail.com
