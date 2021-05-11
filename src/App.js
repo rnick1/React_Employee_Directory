@@ -7,10 +7,10 @@ import EmployeeTable from './components/EmployeeTable';
 import TableHead from './components/TableHead';
 
 /* Future Improvements: 
-1. Replace class component design with functional component design
-2. Use useState and useEffect hooks
-3. Send some of this code to components
-4. Place all API code in a file inside a utils folder
+1. Replace class component design with functional component design.
+2. Use useState and useEffect hooks.
+3. Send some of this code to components.
+4. Place all API code in a file inside a utils folder.
 */
 
 class App extends Component {
