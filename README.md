@@ -35,6 +35,6 @@ rnick1
 
 ### **Link:**
 
-<a href="https://rnick1.github.io/React_Employee_Directory/">Employee_Directory<a>
+<a href="https://smallcompanyemployeedirectory.herokuapp.com/">Employee_Directory<a>
 
 ### If you have any questions, please contact Nick Rider at: rnick0260@gmail.com
