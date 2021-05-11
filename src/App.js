@@ -20,7 +20,7 @@ class App extends Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-// Handling API call
+// Handling API call:
   componentDidMount() {
     axios
       .get("https://randomuser.me/api/?results=20&nat=US")
@@ -33,7 +33,7 @@ class App extends Component {
       });
   }
 
-// Sorting/filtering
+// Sorting/filtering:
   handleChange(event) {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
